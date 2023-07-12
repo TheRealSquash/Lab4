@@ -348,6 +348,8 @@
 "Assets/GameController.cs"
 "Assets/LookController.cs"
 "Assets/PlayerController.cs"
+"Assets/SantaAnimator.cs"
+"Assets/SantaController.cs"
 -langversion:9.0
 
 /deterministic
