@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class SantaAnimator : MonoBehaviour {
     private Animator anim;
+    private SantaController sc;
 
     // Start is called before the first frame update
     void Start() {
         anim = GetComponent<Animator>();
+        sc = GetComponent<SantaController>();
     }
 
     // Update is called once per frame
@@ -16,6 +18,7 @@ public class SantaAnimator : MonoBehaviour {
     }
 
     private void SetParameters() {
-        anim.SetBool("running", true);
+        anim.SetBool("running", sc.IsRunning());
+        anim.SetBool("crawling", sc.IsCrawling());
     }
 }
