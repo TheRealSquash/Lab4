@@ -61,6 +61,8 @@
     <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\LookController.cs" />
     <Compile Include="Assets\SantaController.cs" />
+    <Compile Include="Assets\AudioManager.cs" />
+    <Compile Include="Assets\SantaSoundEmitter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\Ergin3d\Santa Claus\readme.txt" />
@@ -312,11 +314,11 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>K:\Unitys\2021.3.21f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>K:\Unitys\2021.3.21f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -755,10 +757,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="FMODUnityResonanceEditor.csproj">
-      <Project>{9C691053-BB05-7359-1088-AE1D03E81EDB}</Project>
-      <Name>FMODUnityResonanceEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="FMODUnity.csproj">
       <Project>{CF13D7A3-1F99-3788-883C-1CB8428ADB5A}</Project>
       <Name>FMODUnity</Name>
@@ -770,6 +768,10 @@
     <ProjectReference Include="FMODUnityResonance.csproj">
       <Project>{4B3244AC-14BB-9AB9-AE7A-663BE84A3C9E}</Project>
       <Name>FMODUnityResonance</Name>
+    </ProjectReference>
+    <ProjectReference Include="FMODUnityResonanceEditor.csproj">
+      <Project>{9C691053-BB05-7359-1088-AE1D03E81EDB}</Project>
+      <Name>FMODUnityResonanceEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
